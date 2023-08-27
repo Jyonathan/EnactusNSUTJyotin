@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style type="text/css">
+     h1{
+       font-size;1000px;
+       text-decoration:none;
+     }
+     form {
+      position:absolute;
+      top:50%; 
+      right:30%;
+      left:30%;
+      margin:0 auto;
+      transform:translateY(-50%); 
+      padding:30px 40px 40px 40px;
+      font-family: "Segoe UI","Geneva","Tahoma", sans-serif;
+      z-index:3;
+      background-color:white;
+      border:2px solid black;
+      border-top:20px solid rgba(71, 71, 71, 1);
+       border-radius:5px;
+       
+    }
+    html, body{
+      margin:0px;
+      height:100%;
+    }
+     body{
+       margin:0;
+     }
+    body:before{
+      content:"";
+      top:0;
+      right:0;
+      bottom:0;
+      filter:blur(8px);
+      left:0;
+      position:fixed;
+      background:url("Background.png");
+      background-repeat: no-repeat;
+      background-size:cover;
+      z-index:1;
+    }
+     input[type=text], input[type=password]{
+      border: none;
+      padding:10px;
+     border-bottom:2px solid rgba(171, 171, 171, 1);
+      width: 30%;
+    }
+     select{
+       border:none;
+       background-color:rgba(171, 171, 171, 1);
+       color:white;
+     }
+    input[placeholder="Enter Username"], input[placeholder="Enter Phone No."],          input[placeholder="Enter Password"], input[placeholder="Enter E-mail"]  {
+      color: rgba(171, 171, 171, 1);
+    }
+     
+    input[type=submit] {
+      padding: 10px 30px;
+      border: none;
+      background-color: #494746;
+      color:white;
+      transition:0.3s;
+      transition-timing-function: ease-out;
+     }
+     
+     input[type=submit]:hover{
+      padding: 10px 30px;
+      border: none;
+      background-color: white;
+      color:#494746;
+     }
+     
+     input[type=radio]:checked{
+       background-color:#494746;
+     }
+    
+     #u {
+      margin-left: 101px;
+    }
+    
+     #p {
+      margin-left: 108px;
+    }
+    
+     #e {
+      margin-left: 137px;
+    }
+    
+     #phone {
+      margin-left: 20px;
+    }
+    
+     #g {
+      margin-left: 189px;
+    }
+    
+     #gf, #c, #go,  {
+      margin-left: 1px;
+     }
+     
+     #op{
+       margin-left: 127px;
+     }
+     
+     #opc{
+       margin-left: 154px;
+     }
+  </style>
+ </head>
+  <body>
+    <form>
+      <center><h1>Sign In</h1></center> 
+      <hr width=100% color=#494746 height=4px>
+      UserName:
+    <input type="text" placeholder="Enter Username" id="u"><br>
+    <br>
+     Password:
+    <input type="password" id="p" placeholder="Enter passsword"><br>
+    <br>
+     E-mail:
+    <input type="text" placeholder="Enter E-mail" id="e"><br>
+    <br>
+     Gender
+    <div id="g">
+      <input type="radio" name="gender"> Male<br>
+      
+      <br>
+      <div id="gf">
+        <input type="radio" name="gender">Female<br>
+        <br>
+        </div>
+      <div id="go">
+        <input type="radio" name="gender">Other<br>
+         <br>
+        </div>
+    </div>
+      <div id="c">
+      Country
+      <select id=op>
+        <option value="country" selected>India</option>
+        <option value="country">China</option>
+        <option value="country">Afghanistan</option>
+        <option value="country">USA</option>
+        <option value="country">Australia</option>
+        <option value="country">Mynammar</option>
+        <option value="country">Sri Lanka</option>
+        <option value="country">England</option>
+        <option value="country">Ireland</option>
+        <option value="country">Scotland</option>
+        <option value="country">Belarus</option>
+        <option value="country">Belgium</option>
+        <option value="country">Iran</option>
+        <option value="country">Iraq</option>
+        <option value="country">Saudi Arabia</option>
+      </select><br><br>
+        <div id="c">
+       DOB
+        <select id=opc>
+        <option value="DAY" >1</option>
+        <option value="DAY" >2</option>
+        <option value="DAY" >3</option>
+        <option value="DAY" >4</option>
+        <option value="DAY" >5</option>
+        <option value="DAY" >6</option>
+        <option value="DAY" >7</option>
+        <option value="DAY" >8</option>
+        <option value="DAY" >9</option>
+        <option value="DAY" >10</option>
+        <option value="DAY" >11</option>
+        <option value="DAY" >12</option>
+        <option value="DAY" >13</option>
+        <option value="DAY" >14</option>
+        <option value="DAY" >15</option>
+        <option value="DAY" >16</option>
+        <option value="DAY" >17</option>
+        <option value="DAY" >18</option>
+        <option value="DAY" >19</option>
+        <option value="DAY" >20</option>
+        <option value="DAY" >21</option>
+        <option value="DAY" >22</option>
+        <option value="DAY" >23</option>
+        <option value="DAY" >24</option>
+        <option value="DAY" >25</option>
+        <option value="DAY" >26</option>
+        <option value="DAY" >27</option>
+        <option value="DAY" >28</option>
+        <option value="DAY" >29</option>
+        <option value="DAY" >30</option>
+        <option value="DAY" >31</option>
+       </select>
+        <SELECT>
+        <option value="MONTH" >January</option>
+        <option value="MONTH" >February</option>
+        <option value="MONTH" >March</option>
+        <option value="MONTH" >April</option>
+        <option value="MONTH" >May</option>
+        <option value="MONTH" >June</option>
+        <option value="MONTH" >July</option>
+        <option value="MONTH" >August</option>
+        <option value="MONTH" >September</option>
+        <option value="MONTH" >October</option>
+        <option value="MONTH" >November</option>
+        <option value="MONTH" >Decmeber</option>
+
+        </SELECT>
+        <select>
+        <option value="YEAR" >1997</option>
+        <option value="YEAR" >1998</option>
+        <option value="YEAR" >1999</option>
+        <option value="YEAR" >2000</option>
+        <option value="YEAR" >2001</option>
+        <option value="YEAR" >2002</option>
+        <option value="YEAR" >2003</option>
+        <option value="YEAR" >2004</option>
+        <option value="YEAR" >2005</option>
+        <option value="YEAR" >2006</option>
+        <option value="YEAR" >2007</option>
+        <option value="YEAR" >2008</option>
+        <option value="YEAR" >2009</option>
+        <option value="YEAR" >2010</option>
+        <option value="YEAR" >2011</option>
+      </select>
+      </div>
+      <br>
+      Phone No. (Optional)
+    <input type="text" placeholder="Enter Phone No." id="phone"><br>
+    <br>
+     <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
